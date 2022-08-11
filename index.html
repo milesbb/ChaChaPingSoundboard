@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/Chachaping.webp" />
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./index.css" />
+    <!-- <script src="./dexie.min.js"></script> -->
+    <title>Cha-Cha-PING Soundboard</title>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js");
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <!-- reformat into 2x4 grid and add more pics  -->
+    <h1>Cha Cha Ping Soundboard</h1>
+    <div class="wrapDiv">
+      <div class="innerDivs">
+        <img
+          src="assets/Chachaping.webp"
+          class="mainImg"
+          style="filter: hue-rotate(0deg)"
+          onclick="audio1.play();"
+        />
+        <img
+          src="assets/Chachaping.webp"
+          class="mainImg"
+          style="filter: hue-rotate(80deg)"
+          onclick="audio2.play();"
+        />
+        <img
+          src="assets/Chachaping.webp"
+          class="mainImg"
+          style="filter: hue-rotate(160deg)"
+          onclick="audio3.play();"
+        />
+        <img
+          src="assets/Chachaping.webp"
+          class="mainImg"
+          style="filter: hue-rotate(240deg)"
+          onclick="audio4.play();"
+        />
+      </div>
+      <div class="innerDivs">
+        <img
+          src="assets/Chachaping.webp"
+          class="mainImg"
+          style="filter: hue-rotate(40deg)"
+          onclick="audio5.play();"
+        />
+        <img
+          src="assets/Chachaping.webp"
+          class="mainImg"
+          style="filter: hue-rotate(120deg)"
+          onclick="audio6.play();"
+        />
+        <img
+          src="assets/Chachaping.webp"
+          class="mainImg"
+          style="filter: hue-rotate(200deg)"
+          onclick="audio7.play();"
+        />
+        <img
+          src="assets/Chachaping.webp"
+          class="mainImg"
+          style="filter: hue-rotate(280deg)"
+          onclick="audio8.play();"
+        />
+      </div>
+    </div>
+    <script>
+      const audio1 = new Audio("./assets/audio/clip1.mp3");
+      const audio2 = new Audio("./assets/audio/clip2.mp3");
+      const audio3 = new Audio("./assets/audio/clip3.mp3");
+      const audio4 = new Audio("./assets/audio/clip4.mp3");
+      const audio5 = new Audio("./assets/audio/clip5.mp3");
+      const audio6 = new Audio("./assets/audio/clip6.mp3");
+      const audio7 = new Audio("./assets/audio/clip7.mp3");
+      const audio8 = new Audio("./assets/audio/clip8.mp3");
+    </script>
+    <!-- <script src="./index.js"></script> -->
+  </body>
+</html>

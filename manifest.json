@@ -1,0 +1,17 @@
+{
+    "name": "ChaChaPing Soundboard",
+    "short_name": "ChaChaPing",
+    "icons": [
+        {
+            "src": "./assets/Chachaping.webp",
+            "sizes": "450x423",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#a2cb3e",
+    "background_color": "#a2cb3e",
+    "start_url": "/ChaChaPingSoundboard/",
+    "display": "standalone",
+    "orientation": "portrait"
+}
